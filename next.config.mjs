@@ -4,7 +4,8 @@ const nextConfig = {
     trailingSlash: true,
     images: {
         unoptimized: true
-      }
+      },
+    basePath: process.env.BASE_PATH
 };
 
 export default nextConfig;
