@@ -1,6 +1,4 @@
 /** @type {import('next').NextConfig} */
-const SUB_DIRECTORY = "/next-hosting-test";
-const isProd = process.env.NODE_ENV == "production"
 
 const nextConfig = {
     output: 'export',
@@ -8,11 +6,8 @@ const nextConfig = {
     images: {
         unoptimized: true
       },
-    basePath: isProd ? SUB_DIRECTORY : "",
-    assetPrefix: isProd ? SUB_DIRECTORY : "",
-    publicRuntimeConfig: {
-    basePath: isProd ? SUB_DIRECTORY : "",
-  },
-};
+    basePath: '/next-hosting-test',
+    assetPrefix: '/next-hosting-test/'
+  }
 
 export default nextConfig;
